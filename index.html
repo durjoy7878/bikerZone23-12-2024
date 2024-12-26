@@ -7,542 +7,468 @@
     <!--Tailwind and deisyUI-->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.22/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="icon" type="image/x-icon" href="/pic/777.webp">
     <!--Google fonts Popinis-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>Biker Zone </title>
         <!--tailwind color-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script>
       tailwind.config = {
         theme: {
           extend: {
             colors: {
               clifford: '#da373d',
-              'bike-primary': '#E76F51',
-              'banner-primary': 'rgb(241 245 249)',
+              'primary': '#2B2B2B',
+              'secendery': '#A259FF',   
             }
           }
         }
       }
     </script>
 </head>
-<body class="poppins-regular">
-            <header class="md:container m-auto">
-              <!--Nav var start Nav var start Nav var startNav var startNav var startNav var startNav var start-->
-                    <nav>
-                        <div class="navbar bg-base-100">
-                            <div class="flex-1">
-                              <div class="dropdown">
-                                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                                  <svg
-                                    xmlns="http://www.w3.org/2000/svg"
-                                    class="h-5 w-5"
-                                    fill="none"
-                                    viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path
-                                      stroke-linecap="round"
-                                      stroke-linejoin="round"
-                                      stroke-width="2"
-                                      d="M4 6h16M4 12h8m-8 6h16" />
-                                  </svg>
-                                </div>
-                                <ul
-                                  tabindex="0"
-                                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                                  <li><a>Home</a></li>
-                                  <li><a>Shop</a></li>
-                                  <li><a>News</a></li>
-                                  <li><a>Contract</a></li>
-                                </ul>
-                              </div>
-                              <a class="btn btn-ghost text-4xl">BikerZoneBD</a>
-                            </div>
-                            <div class="navbar-center hidden lg:flex">
-                              <ul class="menu menu-horizontal px-1">
-                                <li><a>Home</a></li>
-                                <li><a>Shop</a></li>
-                                <li><a>News</a></li>
-                                <li><a>Contract</a></li>
-                              </ul>
-                            </div>
-                            <div class="">
-                              <a class="btn bg-bike-primary text-white">Button</a>
-                            </div>
-                          </div>
-                    </nav>
-                    <!--slider casual -->
-                    <div class="carousel w-full">
-                      <div id="slide1" class="carousel-item relative h-auto lg:h-[550PX] w-full">
-                          <div class=" flex bg-banner-primary justify-center items-center flex-col lg:flex-row">
-                                <div class="p-8  flex-1 ">
-                                      <h2 class="text-4xl text-bike-primary pl-12 mb-5 ">RIDE-ON R15 V5<br>With Smile</h2>
-                                      <p class="text-xl  pl-12 mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quidem, autem facere corporis velit doloremque quia voluptatibus nisi consectetur in iusto ullam accusamus unde aperiam consequuntur quos nihil illo!</p>
-                                      <button class="btn border-none ml-12 bg-bike-primary text-white">Purchase</button>
-                                </div>
-                                <div class="flex-1"> <img class="h-full w-full --2 lg:p-20" src="img/1.jpg" class="w-full" /></div>
-                          </div>
-                        <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                          <a href="#slide4" class="btn btn-circle">❮</a>
-                          <a href="#slide2" class="btn btn-circle">❯</a>
-                        </div>
+<header>
+  <nav class="container m-auto">
+    <div class="navbar bg-primary h-24">
+      <div class="navbar-start">
+        <div class="dropdown">
+          <div tabindex="0" role="button" class="btn btn-ghost lg:hidden ">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5 bg-white "
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h8m-8 6h16" />
+            </svg>
+          </div>
+          <ul
+            tabindex="0"
+            class="menu menu-sm dropdown-content bg-primary rounded-box text-white z-[1] mt-3 w-52 p-2 shadow">
+            <li><a>Market Place</a></li>
+            <li><a>Ranking</a></li>
+            <li><a>Connect a Wallet</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-ghost text-xl text-white"><i class="fa-solid fa-truck-fast text-[#A259FF] "></i>NFT Marketplace</a>
+      </div>
+      <div class="navbar-end hidden lg:flex">
+        <ul class="flex text-white">
+          <li class=" cursor-pointer flex justify-center items-center hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 h-[60px] w-[152px] rounded-2xl"><a>Market Place</a></li>
+          <li class=" cursor-pointer flex justify-center items-center hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 h-[60px] w-[152px] rounded-2xl"><a>Ranking</a></li>
+          <li class=" cursor-pointer flex justify-center items-center hover:bg-violet-600 focus:outline-none focus:ring focus:ring-violet-300 h-[60px] w-[152px] rounded-2xl"><a>Connect a Wallet</a></li>
+          <li class=" cursor-pointer flex justify-center items-center hover:bg-violet-600 active:bg-violet-700 focus:outline-none focus:ring focus:ring-violet-300 h-[60px] w-[152px] rounded-2xl"><a><i class="fa-solid fa-user text-white p-2"></i>Sign Up</a></li>    
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div  class="container m-auto h-[354px] w-full bg-primary">
+        <div class="">
+            <img src="img/profile.avif" alt="" class=" w-full h-72">
+        </div>
+
+        <div class="w-4/5 m-auto  h-auto  ">
+          <div class="w-32 h-32 border-solid border-2 rounded-xl border-primary  -mt-16 relative">
+            <img src="img/profile.jpg" alt="" class="w-32 h-32 rounded-full "></div>
+              </div>
+  </div>
+</header>  <!--Header End-->  <!--Header End-->  <!--Header End-->  <!--Header End-->  <!--Header End-->  <!--Header End-->
+
+      <body class="poppins-regular container m-auto">
+
+          <div  class="h-[457px] w-full bg-primary">
+                    <div class="h-[377px] lg:w-4/5 w-full pl-4   m-auto lg:grid lg:grid-cols-2 grid grid-cols-1  ">
+
+                      <div class="h-auto ">
+                                  <h2 class="text-white font-semibold text-5xl pt-4">Animakid</h2>
+                                  <div class="flex gap-4 ">
+                                            <div class="lg:w-40 w-auto h-20 pt-8">
+                                              <h2 class="text-3xl py-2 text-white font-semibold">250k+</h2>
+                                              <p  class="text-white ">Volume</p> 
+                                            </div>
+                                            <div class="lg:w-40 w-auto h-20 pt-8">
+                                              <h2 class="text-3xl py-2 text-white font-semibold">50k+</h2>
+                                              <p  class="text-white ">NFTs Sold</p>
+                                            </div>
+                                            <div class="lg:w-40  w-auto  h-20 pt-8">
+                                              <h2 class="text-3xl py-2 text-white font-semibold">3000+</h2>
+                                              <p  class="text-white ">Flowers</p>
+                                            </div>
+                                            
+                                  </div>
+                                  <div class="mt-14">
+                                      <h2 class="text-stone-500 py-2">Bio</h2>
+                                      <p class="text-white">The internet's friendliest designer kid.</p>
+                                  </div>
+                                  <div class="">
+                                        <p class="text-stone-500 py-2">Links</p>
+                                        <div class"">
+                                          <a href="http://"><i class="fa-solid fa-globe text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                                          <a href="http://"><i class="fa-brands fa-facebook text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                                          <a href="http://"><i class="fa-brands fa-instagram text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                                          <a href="http://"><i class="fa-brands fa-twitter text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                                          <a href="http://"><i class="fa-brands fa-linkedin text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                                          
+                                        </div>
+                                  </div>
                       </div>
-                      <div id="slide2" class="carousel-item relative h-auto lg:h-[550PX] w-full">
-                        <div class=" flex bg-banner-primary justify-center items-center flex-col lg:flex-row">
-                              <div class="p-8  flex-1 ">
-                                    <h2 class="text-4xl text-bike-primary pl-12 mb-5 ">RIDE-ON R15 V5<br>With Smile</h2>
-                                    <p class="text-xl  pl-12 mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quidem, autem facere corporis velit doloremque quia voluptatibus nisi consectetur in iusto ullam accusamus unde aperiam consequuntur quos nihil illo!</p>
-                                    <button class="btn border-none ml-12 bg-bike-primary text-white">Purchase</button>
-                              </div>
-                              <div class="flex-1"> <img class="h-full w-full --2 lg:p-20" src="img/2.jpeg" class="w-full" /></div>
-                        </div>
-                      <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                        <a href="#slide2" class="btn btn-circle">❮</a>
-                        <a href="#slide3" class="btn btn-circle">❯</a>
+                      <div class="h-auto  grid grid-flow-col gap-4 lg:justify-center  ">
+                                <div class="h-16 w-40 mt-4">
+                                <a href="http://" class="h-full w-full text-white bg-secendery rounded-2xl flex justify-center items-center hover:bg-white hover:text-primary "><i class="fa-solid fa-rocket p-2"></i>0xc0E3...B79C</a></div>
+                                <div class="h-16 w-40 mt-4">
+                                <a href="http://" class="h-full w-full text-white border-solid border-2 border-secendery rounded-2xl flex justify-center items-center hover:border-none hover:bg-white hover:text-primary "><i class="fa-solid fa-rocket p-2"></i>Flowers</a></div>
                       </div>
+
                     </div>
-                    <div id="slide3" class="carousel-item relative h-auto lg:h-[550PX] w-full">
-                      <div class=" flex bg-banner-primary justify-center items-center flex-col lg:flex-row">
-                            <div class="p-8  flex-1 ">
-                                  <h2 class="text-4xl text-bike-primary pl-12 mb-5 ">RIDE-ON R15 V5<br>With Smile</h2>
-                                  <p class="text-xl  pl-12 mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quidem, autem facere corporis velit doloremque quia voluptatibus nisi consectetur in iusto ullam accusamus unde aperiam consequuntur quos nihil illo!</p>
-                                  <button class="btn border-none ml-12 bg-bike-primary text-white">Purchase</button>
-                            </div>
-                            <div class="flex-1"> <img class="h-full w-full --2 lg:p-20" src="img/3.jpg" class="w-full" /></div>
-                      </div>
-                    <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                      <a href="#slide2" class="btn btn-circle">❮</a>
-                      <a href="#slide4" class="btn btn-circle">❯</a>
-                    </div>
+                                       
+          </div>
+
+          <!--Profile details end--> <!--Profile details end--> <!--Profile details end--> <!--Profile details end--> <!--Profile details end--> <!--Profile details end-->
+
+          <div class="container m-auto h-16 w-full border-t-2 border-stone-500 bg-primary flex justify-center items-center">
+
+                 <div class="h-14 w-4/5 grid grid-cols-3 justify-center items-center">
+
+                  <div class="flex gap-0 m-4 flex justify-center items-center border-b-2 border-stone-500 h-full">
+                    <p class="text-white">Created</p>
+                    <p class="text-white p-1 text-sm rounded-full bg-neutral-400 text-center">234</p>
                   </div>
-                  <div id="slide4" class="carousel-item relative h-auto lg:h-[550PX] w-full">
-                    <div class=" flex bg-banner-primary justify-center items-center flex-col lg:flex-row">
-                          <div class="p-8  flex-1 ">
-                                <h2 class="text-4xl text-bike-primary pl-12 mb-5 ">RIDE-ON R15 V5<br>With Smile</h2>
-                                <p class="text-xl  pl-12 mb-5 ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt perferendis quidem, autem facere corporis velit doloremque quia voluptatibus nisi consectetur in iusto ullam accusamus unde aperiam consequuntur quos nihil illo!</p>
-                                <button class="btn border-none ml-12 bg-bike-primary text-white">Purchase</button>
-                          </div>
-                          <div class="flex-1"> <img class="h-full w-full --2 lg:p-20" src="img/4.jpg" class="w-full" /></div>
-                    </div>
-                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
-                    <a href="#slide3" class="btn btn-circle">❮</a>
-                    <a href="#slide1" class="btn btn-circle">❯</a>
+
+                  <div class="flex gap-2 m-4 flex justify-center items-center">
+                    <p class="text-neutral-400 hover:text-white">Owned</p>
+                    <p class="text-white p-1 text-sm rounded-full bg-neutral-400 text-center">23</p>
                   </div>
+
+                  <div class="flex gap-2 m-4 flex justify-center items-center">
+                    <p class="text-neutral-400 hover:text-white">Collection</p>
+                    <p class="text-white p-1 text-sm rounded-full bg-neutral-400 text-center">34</p>
+                  </div>
+
                 </div>
-                    </div>
-            </header>
-            <main class="md:container m-auto">
-                     <section>
-                                  <h2 class="text-4xl text-center p-8 font-semibold text-bike-primary">Fruatres Bikes</h2>
-                                  <div class="grid  lg:grid-cols-4 grid-cols-1 gap-4 lg:m-0 m-4">
-
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>  <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>  <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-                                      
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                    
-                                    <div class="card bg-base-100 shadow-lg ">
-                                      <figure class="">
-                                        <img
-                                          src="img/2.jpeg"
-                                          alt="Shoes"
-                                          class="rounded-xl" />
-                                      </figure>
-                                      <div class="card-body items-center text-center">
-                                        <h2 class="">Key Specs of Suzuki GSX-R150</h2>
-                                        <p>Phone: +8801819-999954<br>
-                                          Address: 60Feet, Shapla House 363/H/2<br>North Pirerbag, 2/Ka, Road, Dhaka</p>
-                                        <div class="card-actions">
-                                          <button class="btn bg-bike-primary text-white">Buy Now</button>
-                                        </div>
-                                      </div>
-                                    </div>
-
-
-                                  </div>
-                     </section>
-
-                     <section class="md:container m-auto" >
-                      <h2 class="text-4xl text-center p-8 font-semibold">Happy <span class="text-bike-primary">Clints Says</span></h2>
-                            <div class="grid  lg:grid-cols-5 grid-cols-1 gap-4 lg:m-0 m-4">
-
-                              <div class="card bg-base-100 shadow-xl p-8">
-                                <figure>
-                                  <img class="rounded-full w-32 h-32"
-                                    src="img/3.jpg"
-                                    alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                   <p class="text-justify">If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                   </p>
-
-                                   <div class="rating justify-center">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                      type="radio"
-                                      name="rating-2"
-                                      class="mask mask-star-2 bg-orange-400"
-                                      checked="checked" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  </div>
-                                  <div class=" text-center">
-                                        <h2 class="p-2 text-2xl font-semibold text-green-500">Durjoy Sarker</h2><br>
-                                        <P class="font-semibold">Chutiyo</P>
-                                  </div>
-                                </div>
+                 </div>
+                 <!--items head end--><!--items head end--><!--items head end--><!--items head end--><!--items head end--><!--items head end--><!--items head end--><!--items head end-->
+                  
+                 <div class="lg:container m-auto h-auto p-8 w-full  bg-[#3B3B3B] flex justify-center items-center">
+                  <div class="h-auto lg:w-4/5 grid lg:grid-cols-3 grid-cols-1 justify-center items-center gap-4">
+                   
+                    <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="img/img1.avif" alt="" class="h-96 w-full rounded-t-2xl">
                               </div>
-
-                              <div class="card bg-base-100 shadow-xl p-8">
-                                <figure>
-                                  <img class="rounded-full w-32 h-32"
-                                    src="img/3.jpg"
-                                    alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                   <p class="text-justify">If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                   </p>
-
-                                   <div class="rating justify-center">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                      type="radio"
-                                      name="rating-2"
-                                      class="mask mask-star-2 bg-orange-400"
-                                      checked="checked" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  </div>
-                                  <div class=" text-center">
-                                        <h2 class="p-2 text-2xl font-semibold text-green-500">Durjoy Sarker</h2><br>
-                                        <P class="font-semibold">Chutiyo</P>
-                                  </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
                                 </div>
-                              </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
 
-                              <div class="card bg-base-100 shadow-xl p-8">
-                                <figure>
-                                  <img class="rounded-full w-32 h-32"
-                                    src="img/3.jpg"
-                                    alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                   <p class="text-justify">If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                   </p>
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
 
-                                   <div class="rating justify-center">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                      type="radio"
-                                      name="rating-2"
-                                      class="mask mask-star-2 bg-orange-400"
-                                      checked="checked" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  </div>
-                                  <div class=" text-center">
-                                        <h2 class="p-2 text-2xl font-semibold text-green-500">Durjoy Sarker</h2><br>
-                                        <P class="font-semibold">Chutiyo</P>
-                                  </div>
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
                                 </div>
-                              </div>
-
-                              <div class="card bg-base-100 shadow-xl p-8">
-                                <figure>
-                                  <img class="rounded-full w-32 h-32"
-                                    src="img/3.jpg"
-                                    alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                   <p class="text-justify">If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                   </p>
-
-                                   <div class="rating justify-center">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                      type="radio"
-                                      name="rating-2"
-                                      class="mask mask-star-2 bg-orange-400"
-                                      checked="checked" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  </div>
-                                  <div class=" text-center">
-                                        <h2 class="p-2 text-2xl font-semibold text-green-500">Durjoy Sarker</h2><br>
-                                        <P class="font-semibold">Chutiyo</P>
-                                  </div>
-                                </div>
-                              </div>
-                              
-
-                              <div class="card bg-base-100 shadow-xl p-8">
-                                <figure>
-                                  <img class="rounded-full w-32 h-32"
-                                    src="img/3.jpg"
-                                    alt="Shoes" />
-                                </figure>
-                                <div class="card-body">
-                                   <p class="text-justify">If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                    If a dog chews shoes whose shoes does he choose?
-                                   </p>
-
-                                   <div class="rating justify-center">
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input
-                                      type="radio"
-                                      name="rating-2"
-                                      class="mask mask-star-2 bg-orange-400"
-                                      checked="checked" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                    <input type="radio" name="rating-2" class="mask mask-star-2 bg-orange-400" />
-                                  </div>
-                                  <div class=" text-center">
-                                        <h2 class="p-2 text-2xl font-semibold text-green-500">Durjoy Sarker</h2><br>
-                                        <P class="font-semibold">Chutiyo</P>
-                                  </div>
-                                </div>
-                              </div>
-
-
+                              </div> 
                             </div>
-                     </section>
 
-                     <section class="md:container m-auto">
-                      <h2 class="text-4xl text-center p-8 font-semibold">Fequently<span class="text-bike-primary">Asked Quation</span></h2>
-
-                      <div class="grid grid-cols-1 lg:grid-cols-2">
-                                <div class="flex justify-center items-center p-12"><img src="img/02.webp" alt="" class="w-96 shadow-xl "></div>
-
-                                <div class="flex justify-center items-center p-12" >
-                                  <div class="join join-vertical w-full">
-                                    <div class="collapse collapse-arrow join-item ">
-                                      <input type="radio" name="my-accordion-4" checked="checked" />
-                                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                                      <div class="collapse-content">
-                                        <p>If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                          If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                        </p>
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/08.webp" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
                                       </div>
-                                    </div>
-                                    <div class="collapse collapse-arrow join-item ">
-                                      <input type="radio" name="my-accordion-4" />
-                                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                                      <div class="collapse-content">
-                                        <p>If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                          If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?</p>
-                                      </div>
-                                    </div>
-                                    <div class="collapse collapse-arrow join-item ">
-                                      <input type="radio" name="my-accordion-4" />
-                                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                                      <div class="collapse-content">
-                                        <p>If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                          If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?</p>
-                                      </div>
-                                    </div>
-                                    <div class="collapse collapse-arrow join-item ">
-                                      <input type="radio" name="my-accordion-4" />
-                                      <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
-                                      <div class="collapse-content">
-                                        <p>If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                          If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?</p>
-                                      </div>
-                                    </div>
-                                    <div class="collapse collapse-arrow join-item ">
-                                      <input type="radio" name="my-accordion-4" />
-                                      <div class="collapse-title text-xl font-medium">Click to open this one and close others </div>
-                                      <div class="collapse-content">
-                                        <p>If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?
-                                          If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose? If a dog chews shoes whose shoes does he choose?</p>
-                                      </div>
-                                    </div>
-                                  </div>
                                 </div>
-                      </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
 
-                     </section>
-            </main>
-            <footer>
-              <footer class="footer bg-banner-primary text-base-content p-10">
-                <nav>
-                  <h6 class="footer-title">Services</h6>
-                  <a class="link link-hover">Branding</a>
-                  <a class="link link-hover">Design</a>
-                  <a class="link link-hover">Marketing</a>
-                  <a class="link link-hover">Advertisement</a>
-                </nav>
-                <nav>
-                  <h6 class="footer-title">Company</h6>
-                  <a class="link link-hover">About us</a>
-                  <a class="link link-hover">Contact</a>
-                  <a class="link link-hover">Jobs</a>
-                  <a class="link link-hover">Press kit</a>
-                </nav>
-                <nav>
-                  <h6 class="footer-title">Social</h6>
-                  <div class="grid grid-flow-col gap-4">
-                    <a>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="fill-current">
-                        <path
-                          d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"></path>
-                      </svg>
-                    </a>
-                    <a>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="fill-current">
-                        <path
-                          d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
-                      </svg>
-                    </a>
-                    <a>
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="24"
-                        height="24"
-                        viewBox="0 0 24 24"
-                        class="fill-current">
-                        <path
-                          d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
-                      </svg>
-                    </a>
-                  </div>
-                </nav>
-              </footer>
-            </footer>
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/07.jfif" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/06.avif" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/05.webp" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/04.webp" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/03.avif" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/02.jpg" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            <div class=" text-white bg-primary rounded-2xl">
+                              <div class="">
+                                    <img src="pic/01.webp" alt="" class="h-96 w-full rounded-t-2xl">
+                              </div>
+                              <div class="h-48 w-80 m-2 pl-2">
+                                <div class="h-auto w-4/5">
+                                      <div><p class="text-2xl pb-4">Distant Galaxy</p></div>
+                                      <div>
+                                          <div class="flex gap-2  items-center">
+                                            <img src="img/profile.avif" alt="" class="w-10 h-10 rounded-full">
+                                            <p class="text-lg">Animkid</p>
+                                          </div>
+                                      </div>
+                                </div>
+                                <div class=" pt-8 flex justify-between  ">
+                                        <div class="">
+
+                                        <div><p class="text-neutral-400">Price</p></div>
+                                        <div><p class="text-lg">1.63 ETH</p></div>  </div>
+
+                                        <div class="">
+                                          <div><p class="text-neutral-400">Hight Bid</p></div>
+                                          <div><p class="text-lg">0.33 ETH</p></div>
+
+                                        </div>
+                                </div>
+                              </div> 
+                            </div>
+
+                            
+                          
+                     </div>                 
+ 
+                 </div>
+                  
 </body>
+
+<footer class="container m-auto p-8 bg-primary">
+        <div class=" lg:flex p-2 justify-between items-center w-4/5 h-auto m-auto border-b-2 border-stone-500">
+          
+          <div class="basis-1/4 h-48 m-4">
+              <div class=""><a class="text-xl text-white "><i class="fa-solid fa-truck-fast text-[#A259FF]"></i> NFT Marketplace</a></div>
+              <p class="text-neutral-400 text-sm pt-4">NFT marketplace UI created<br>with Anima for Figma</p>
+              <p class="text-neutral-400 text-sm pt-4">Join our community</p>
+              <div class="pt-2">
+                <a href="http://"><i class="fa-solid fa-globe text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                <a href="http://"><i class="fa-brands fa-facebook text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                <a href="http://"><i class="fa-brands fa-instagram text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                <a href="http://"><i class="fa-brands fa-twitter text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                <a href="http://"><i class="fa-brands fa-linkedin text-stone-500 text-xl mr-2 hover:text-white"></i></a>
+                  </div>
+          </div>
+
+          <div class="basis-1/4 h-48 m-4">
+            <div class=""><a class="text-xl text-white ">Explore</a></div>
+            <p class="text-neutral-400 text-sm pt-4">Marketplace</p>
+            <p class="text-neutral-400 text-sm pt-4">Ranking</p>
+            <p class="text-neutral-400 text-sm pt-4">Coonect Wellet</p>
+          </div>
+
+          <div class="basis-2/4 lg:h-48 h-64 m-4">
+            <div class=""><a class="text-xl text-white ">Join our weekly digest</a></div>
+            <p class="text-neutral-400 text-sm pt-4">Get exclusive promotions & updates<br>straight to your inbox.</p>
+            <div class="h-12 lg:w-4/5 w-full lg:flex mt-4">
+                    <input type="text" name="" id="" placeholder=" Inter Your Email here" class="h-full lg:w-3/5 w-full border-none lg:rounded-l-lg lg:mb-none mb-4">
+                    <input type="submit" value="SUBSCRIBE" id="" class="bg-secendery h-full lg:w-2/5 w-full border-none lg:rounded-r-lg text-white">
+            </div>
+ 
+          </div>
+          
+        </div>  
+        <p class="text-neutral-400 text-sm mt-4 text-center">Ⓒ NFT Market. Use this template freely.</p>
+</footer>
 </html>
+
+
+
+
+
+
+
+
+
